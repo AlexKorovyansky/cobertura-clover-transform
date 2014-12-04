@@ -12,12 +12,13 @@ support for displaying Clover test coverage output.
 This tool can be used to convert Coverage.py output to a format
 Bamboo can display.
 
-To run
+Usage
 ------
+    python -m cobertura_clover_transform.converter [-h] [-o OUTPUT] coverage_xml
 
-Easy peasy::
+For example, command to transform coverage.xml to clover.xml:  
 
-    python -m cobertura_clover_transform.converter <xml_file>
+    python -m cobertura_clover_transform.converter -o clover.xml coverage.xml
 
 The XML
 -------
