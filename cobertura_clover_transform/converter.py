@@ -11,7 +11,7 @@ def convert(inxml):
 
     transform = ET.XSLT(xslt)
     newdom = transform(dom)
-    return ET.tostring(newdom, pretty_print=True)
+    return ET.tostring(newdom, pretty_print=True).decode('utf-8')
 
 
 if __name__ == '__main__':
